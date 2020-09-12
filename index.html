@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Weight Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <article id="alert" class="alert">
+      The <strong>pokemon</strong> you're looking for doesn't exist. Please check for any typo or try another name/number. 🤠
+    </article>
+    <main class="main">
+      <h1>Pokemon Weight Calculator</h1>
+      <section class="search">
+        <label id="field" class="field" for="search-bar">
+          Search pokemon:
+          <input
+            id="search-bar"
+            type="text"
+            class="input"
+            name="search-bar"
+            placeholder="Search by pokemon number or name!"/>
+        </label>
+        <button id="search" class="button">Catch 'em all!</button>
+      </section>
+      <section>
+        <p>Total weight: <span id="total-weight">0.00</span></p>
+      </section>
+      <table class="table">
+        <thead>
+          <th class="thead">No.</th>
+          <th class="thead">Image</th>
+          <th class="thead">Name</th>
+          <th class="thead">Weight</th>
+          <th class="thead">Delete</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
